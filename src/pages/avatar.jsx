@@ -34,6 +34,9 @@ const Avatar = () => {
     }
     FetchImages()
   }, [])
+  React.useEffect(() => {
+    if (!currentUser) navigate('/login')
+  }, [currentUser])
   const setProfilePicture = async () => {
     try {
       if (!currentUser) return toast.error('Not found user !!', toastoptions)

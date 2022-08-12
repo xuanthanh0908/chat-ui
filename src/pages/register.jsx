@@ -15,6 +15,7 @@ const Register = () => {
   const [input, setInput] = React.useState({
     username: '',
     email: '',
+    name: '',
     password: '',
     confirmPassword: '',
   })
@@ -73,12 +74,18 @@ const Register = () => {
         <form onSubmit={handleSubmit}>
           <div className="brand">
             <h1>Regiter</h1>
-            <img className="logo" src={images.logo} alt="logo" />
+            {/* <img className="logo" src={images.logo} alt="logo" /> */}
           </div>
           <InputField
             type={'text'}
             name="username"
             placeholder={'Username'}
+            onChange={handleChange}
+          />
+          <InputField
+            type={'text'}
+            name="name"
+            placeholder={'name'}
             onChange={handleChange}
           />
           <InputField
@@ -117,7 +124,10 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: var(--bg__primaryBoldColor);
+  /* background-color: var(--bg__primaryBoldColor);
+   */
+  background-color: #131324;
+
   .brand {
     display: flex;
     flex-direction: row-reverse;
@@ -142,7 +152,9 @@ const FormContainer = styled.div`
     flex-direction: column;
     gap: 1rem;
     border-radius: 2rem;
-    background-color: var(--bg__primaryColor);
+    /* background-color: var(--bg__primaryColor); */
+    background-color: #080420;
+
     padding: 3rem;
     button {
       outline: none;

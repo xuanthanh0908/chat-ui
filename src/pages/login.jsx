@@ -124,7 +124,6 @@ const FormContainer = styled.div`
     flex-direction: column;
     gap: 1rem;
     border-radius: 2rem;
-    /* background-color: #81cacf; */
     background-color: #080420;
 
     padding: 3rem;
