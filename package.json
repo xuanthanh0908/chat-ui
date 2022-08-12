@@ -22,7 +22,8 @@
     "socket.io-client": "^4.5.1",
     "styled-components": "^5.3.5",
     "uuid": "^8.3.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "gh-pages": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,9 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "https://xuanthanh0908.github.io/chat-ui/",
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
