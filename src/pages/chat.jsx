@@ -3,7 +3,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { io } from 'socket.io-client'
 import styled from 'styled-components'
-import { host, sendMessRoutes } from '../api/routesApi'
+import { sendMessRoutes } from '../api/routesApi'
 import Welcome from '../components/welcome'
 import useUser from '../hooks/useUser'
 import ChatDetails from './chat_user'
@@ -19,7 +19,7 @@ const Chat = () => {
   }
   React.useEffect(() => {
     if (currentUser) {
-      socket.current = io('http://localhost:3004')
+      socket.current = io('https://xuanthanhchatserver.herokuapp.com')
       socket.current.emit('add-user', currentUser.userId)
     }
   }, [])
