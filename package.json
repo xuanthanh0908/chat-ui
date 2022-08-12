@@ -1,4 +1,5 @@
 {
+  "homepage": "https://xuanthanh0908.github.io/chat-ui",
   "name": "chat",
   "version": "0.1.0",
   "private": true,
@@ -31,7 +32,6 @@
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://xuanthanh0908.github.io/chat-ui/",
   "eslintConfig": {
     "extends": [
       "react-app",
