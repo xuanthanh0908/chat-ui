@@ -31,7 +31,7 @@
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": ".",
+  "homepage": "https://xuanthanh0908.github.io/chat-ui/",
   "eslintConfig": {
     "extends": [
       "react-app",
